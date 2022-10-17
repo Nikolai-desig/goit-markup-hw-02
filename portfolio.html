@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>PortfolioDocument</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/">WebStudio</a>
-            <ul>
-                <li><a href="#">Студія</a></li>
-                <li><a href="#">Портфоліо</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul>
+    <nav>
+        <a  class="logo-header" href="/">Web<span>Studio</span></a>
+        <ul class="site-nav list">
+            <li><a href="#">Студія</a></li>
+            <li><a href="#">Портфоліо</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+        <ul class="site-info list">
             <li>
                 <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -27,8 +31,8 @@
     </header>
     <main>
         <section class="access-buttons">
-            <h2>Кнопки доступу</h2>
-            <ul>
+            <h2 class="visually-hidden">Кнопки доступу</h2>
+            <ul class="portfolio-button list">
                 <li><button type="button">Усі</button></li>
                 <li><button type="button">Веб-сайти</button></li>
                 <li><button type="button">Додатки</button></li>
@@ -38,8 +42,8 @@
 
         </section>
         <section class="projects">
-            <h2>Проекти</h2>
-            <ul>
+            <h2 class="visually-hidden">Проекти</h2>
+            <ul class="projects-list list">
                 <li>
                     <img src="./images/project1.jpg" alt="notebook" width="370">
                     <h3>Технокряк</h3>
@@ -89,11 +93,11 @@
         </section>
     </main>
     <footer>
-        <a href="/">WebStudio</a>
+        <a class="logo-footer" href="/">Web<span>Studio</span></a>
         <address>
-            <ul>
+            <ul class="footer-info list">
                 <li>
-                    <a 
+                    <a class="site_adress" 
                     href="https://goo.gl/maps/q8szckF4ap9dP3nEA"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
