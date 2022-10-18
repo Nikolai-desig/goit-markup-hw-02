@@ -9,29 +9,24 @@
  /* заголовки #212121 */
 
  /* інший текст #757575 */
-body {
-   background-color: #fff;
-   font-family: 'Roboto', Raleway;
-}
+
 :root {
     --primary-text-color: #212121;
     --accent-text: #2196F3;
     --other-text: #757575;
+    --background-and-text: #ffffff;
+    --logo-half: #000;
+    --block-background: #2F303A;
+    --team-background: #F5F4FA;
+}
+body {
+   background-color: var(--background-and-text);
+   font-family: 'Roboto', sans-serif;
 }
 a {
     text-decoration: none;
 }
- /* види всіх заголовків   */
-h3 {
-    font-family: 'Roboto';
- }  
- h2 {
-    font-family: 'Roboto';
- }  
- h1 {
-    font-family: 'Roboto';
- }
- 
+
  .visually-hidden {
       position: absolute;
       white-space: nowrap;
@@ -55,14 +50,13 @@ h3 {
     color: var(--accent-text);
  }
  .logo-header span{
-    color: #000;
+    color: var(--logo-half);
  }
 .list {
     list-style: none;
 }
 
 .site-nav a {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -77,7 +71,6 @@ h3 {
 }
 
 .site-info a {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -91,30 +84,36 @@ h3 {
 
 /* Основний заголовок з кнопкою */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--block-background);
 }
 .hero h1 {
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--background-and-text);
 }
 .hero button {
-   font-family: 'Roboto';
+   font-family: inherit;
    font-weight: 700;
-   background: #2196F3;
+   font-size: 16px;
+   background: var(--accent-text);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    cursor: pointer;
-   color: #fff;
+   color: var(--background-and-text);
 }
 /* Блок з Нашими особливостями */
+.skills h3 {
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.1;
+   }
 .skills p{
-    font-family: 'Roboto';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -125,19 +124,13 @@ h3 {
 
  /* блок Наша команда */
  .team {
-    background-color: #F5F4FA;
-    text-align: center;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1446px;
+    background-color: var(--team-background);
+    
  }
  .ourteam {
-   font-family: 'Roboto';
    font-weight: 700;
    font-size: 36px;
-   line-height: 42px;
-   text-align: center;
+   line-height: 1.2;
    letter-spacing: 0.03em;
  }
     
@@ -148,66 +141,35 @@ h3 {
 
 
  .teammate-igor {
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 215px;
-    top: 1632px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+   
  }
  
  .teammate-olga {
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 515px;
-    top: 1632px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+
  }
  
  .teammate-mukola {
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 815px;
-    top: 1632px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+
  }
  
  .teammate-mukhailo {
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 1115px;
-    top: 1632px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+
  }
 
  .teamlist p{
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: center;
+   
     color: var(--other-text);
  }
 
  /* блок кнопок портфоліо */
  .portfolio-button button {
-   font-family: 'Roboto';
    font-weight: 500;
    font-size: 16px;
    line-height: 1.6;
-   text-align: center;
    letter-spacing: 0.03em;
    cursor: pointer;
    color: var(--primary-text-color);
@@ -215,19 +177,26 @@ h3 {
  .portfolio-button button:hover {
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
    border-radius: 4px;
-   color: #fff;
+   color: var(--background-and-text);
    background-color: var(--accent-text);
  }
  .portfolio-button button:focus {
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
    border-radius: 4px;
-   color: #fff;
+   color: var(--background-and-text);
    background-color: var(--accent-text);
  }
 
  /* секця/блок проекти */
+ .projects-list h3 {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+   color: var(--primary-text-color);
+ }
  .projects-list p {
-   font-family: 'Roboto';
    font-weight: 400;
    font-size: 16px;
    line-height: 1.9;
@@ -237,7 +206,7 @@ h3 {
 
  /* Футер */
  footer {
-    background-color: #2F303A;
+    background-color: var(--block-background);
  }
 
  .logo-footer {
@@ -251,23 +220,35 @@ h3 {
  }
 
  .logo-footer span {
-   color: #fff;
+   color: var(--background-and-text);
  }
  
  .footer-info .site_adress {
-   font-family: 'Roboto';
    font-weight: 400;
    font-size: 14px;
+   font-style: normal;
    line-height: 1.7;
    letter-spacing: 0.03em;
-   color: #fff;
+   color: var(--background-and-text);
+ }
+ .footer-info .site_adress:hover {
+   color: var(--accent-text);
+ }
+ .footer-info .site_adress:focus {
+   color: var(--accent-text);
  }
 
  .footer-info a {
-   font-family: 'Roboto';
+   font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 1.7;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
+ }
+ .footer-info a:hover {
+   color: var(--accent-text);
+ }
+ .footer-info a:focus {
+   color: var(--accent-text);
  }
